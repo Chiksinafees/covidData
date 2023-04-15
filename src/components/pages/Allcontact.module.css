@@ -1,0 +1,28 @@
+.common.search {
+  display: flex;
+  align-content: flex-start;
+}
+
+.common {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.search {
+  border-radius: 100px;
+  background-color: lightgray;
+  border: transparent;
+  text-align: center;
+}
+
+.num {
+  border-radius: 100px;
+  background-color: lightgray;
+  border: transparent;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}

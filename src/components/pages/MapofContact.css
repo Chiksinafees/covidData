@@ -1,0 +1,53 @@
+.MapContainer {
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  display: block;
+}
+
+/* Styling for the map container */
+.map-container {
+  height: 80vh;
+  width: 100%;
+}
+
+/* Styling for the map */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styling for the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #444;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}

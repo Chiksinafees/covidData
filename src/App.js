@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Contact from "./components/pages/Contact";
+import { Fragment } from "react";
+import Detail from "./components/pages/Detail";
+import { Route } from "react-router-dom";
+import Contactchart from "./components/pages/Contactchart";
+import MapofCases from "./components/pages/MapofCases";
+import Header from "./components/pages/Header";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <br />
+      <Route path="/" exact>
+        <Contact />
+      </Route>
+      <Route path="/Detail" exact>
+        <Detail />
+      </Route>
+      <Route path="/Contactchart" exact>
+        <Contactchart />
+      </Route>
+      <Route path="/MapofCases" exact>
+        <MapofCases />
+      </Route>
+    </Fragment>
   );
 }
 
